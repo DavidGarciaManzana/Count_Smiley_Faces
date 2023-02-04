@@ -1,6 +1,6 @@
 let countSmileyFaces = (arr: string[]): number => {
-    let i = 0;
-    arr.forEach((item) => {
+    let i:number = 0;
+    arr.forEach((item:string) => {
         if ((item.includes(':') || item.includes(';')) && (item.includes('D') || item.includes(')'))) {
             if (item.length == 2) { i++ }
             else if ((item.length == 3) && ((item[1] != '-') && (item[1] != '~'))) {
